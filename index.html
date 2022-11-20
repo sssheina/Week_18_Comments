@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/comment.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Comments</title>
+</head>
+
+<body class="body">
+
+    <div class="container">
+        <h1>COMMENTS</h1>
+
+
+        <div id="comments"></div>
+
+
+        <form class="form">
+
+            <div class="enter">
+                <div class="inputfield">
+                    <label for="author"><span class="userInfo">USER NAME</span></label>
+                    <input type="text" id="author" placeholder="User Name">
+                </div>
+
+                <div class="inputfield">
+                    <label for="picture"><span class="userInfo">USER PIC</span></label>
+                    <input type="text" id="picture" placeholder="URL">
+                </div>
+                <div class="but">
+                    <button class="deleteButton" onclick="doDelite()">DELITE USER DETAILS AND COMMENTS</button>
+                </div>
+                <div class="inputfield">
+                    <label for="comment"><span class="userInfo">COMMENT</span></label>
+                    <textarea name="comment" id="comment" cols="40" rows="5"
+                        placeholder="Enter comment..."></textarea>
+                </div>
+            </div>
+
+            <button type="button" onclick="sendComment()">SEND COMMENT</button>
+
+        </form>
+    </div>
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>
