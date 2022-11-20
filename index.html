@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/comment.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>COMMENTS</title>
+</head>
+<body>
+    <div class="wrapper">
+    <h1 class="title">Comments</h1>
+    <div id="container">
+        <image class="avatar"></image>
+        <div class="name"></div>
+    </div>
+    <div class="form formWithValidation">
+        <div class="inputfield">
+            <label for="userName">Enter your name</label>
+            <input type="text" class="userName input">
+        </div>
+        <div class="inputfield">
+            <label for="link">Enter link to your avatar</label>
+            <input type="text" class="link input">
+        </div>
+        <div class="inputfield">
+            <textarea name="comment" rows="15"	cols="80" class="input" id="newComment">
+            </textarea>
+        </div>
+
+        <div class="inputfield">
+            <button type="submit" value="Submit" class="btn validateBtn" onclick="addComment()">Submit</button>
+        </div>
+    </div>
+</div>
+<script src="./assets/scripts/index.js"></script>
+</body>
+</html>
